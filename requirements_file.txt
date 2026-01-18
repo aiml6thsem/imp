@@ -1,0 +1,19 @@
+# Core dependencies
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+pydantic==2.5.0
+
+# Kokoro TTS
+kokoro>=0.9.2
+
+# Audio processing
+soundfile==0.12.1
+numpy>=1.24.0
+
+# Optional but recommended
+pydub==0.25.1  # For MP3 support (requires ffmpeg)
+
+# System dependencies (install separately):
+# - espeak-ng: sudo apt-get install espeak-ng
+# - ffmpeg (optional, for MP3): sudo apt-get install ffmpeg
