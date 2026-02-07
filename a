@@ -1,0 +1,45 @@
+scrape_webpage
+Scrape a webpage and extract its content in various formats. This tool allows fetching content from a single URL with configurable browser behavior options. Use this for extracting text content, HTML structure, collecting links, or capturing screenshots of webpages.
+Parameters
+url*
+The URL of the webpage to scrape
+sessionOptions
+Options for the browser session. Avoid setting these if not mentioned explicitly
+outputFormat*
+The format of the output
+crawl_webpages
+Crawl a website starting from a URL and explore linked pages. This tool allows systematic collection of content from multiple pages within a domain. Use this for larger data collection tasks, content indexing, or site mapping.
+Parameters
+url*
+The URL of the webpage to crawl.
+sessionOptions
+Options for the browser session. Avoid setting these if not mentioned explicitly
+outputFormat*
+The format of the output
+followLinks*
+Whether to follow links on the crawled webpages
+maxPages
+No description
+ignoreSitemap
+No description
+extract_structured_data
+Extract structured data from a webpage. This tool allows you to extract structured data from a webpage using a schema.
+Parameters
+urls*
+The list of URLs of the webpages to extract structured information from. Can include wildcards (e.g. https://example.com/*)
+prompt*
+The prompt to use for the extraction
+schema
+The json schema to use for the extraction. Must provide an object describing a spec compliant json schema, any other types are invalid.
+sessionOptions
+Options for the browser session. Avoid setting these if not mentioned explicitly
+
+search_with_bing
+Search the web using Bing. This tool allows you to search the web using bing.com
+Parameters
+query*
+The search query to submit to Bing
+sessionOptions
+Options for the browser session. Avoid setting these if not mentioned explicitly
+numResults
+Number of search results to return
